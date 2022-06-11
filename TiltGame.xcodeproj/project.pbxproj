@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A88D816B2854DFD900A6F3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D816A2854DFD900A6F3D6 /* AppDelegate.swift */; };
+		A88D816D2854DFD900A6F3D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D816C2854DFD900A6F3D6 /* SceneDelegate.swift */; };
+		A88D816F2854DFD900A6F3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D816E2854DFD900A6F3D6 /* ViewController.swift */; };
+		A88D81722854DFD900A6F3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88D81702854DFD900A6F3D6 /* Main.storyboard */; };
+		A88D81742854DFDD00A6F3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88D81732854DFDD00A6F3D6 /* Assets.xcassets */; };
+		A88D81772854DFDD00A6F3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88D81752854DFDD00A6F3D6 /* LaunchScreen.storyboard */; };
+		A88D81822854DFDE00A6F3D6 /* TiltGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D81812854DFDE00A6F3D6 /* TiltGameTests.swift */; };
+		A88D818C2854DFDE00A6F3D6 /* TiltGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D818B2854DFDE00A6F3D6 /* TiltGameUITests.swift */; };
+		A88D818E2854DFDE00A6F3D6 /* TiltGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D818D2854DFDE00A6F3D6 /* TiltGameUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A88D817E2854DFDE00A6F3D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A88D815F2854DFD900A6F3D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A88D81662854DFD900A6F3D6;
+			remoteInfo = TiltGame;
+		};
+		A88D81882854DFDE00A6F3D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A88D815F2854DFD900A6F3D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A88D81662854DFD900A6F3D6;
+			remoteInfo = TiltGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A88D81672854DFD900A6F3D6 /* TiltGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiltGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88D816A2854DFD900A6F3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A88D816C2854DFD900A6F3D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A88D816E2854DFD900A6F3D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A88D81712854DFD900A6F3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A88D81732854DFDD00A6F3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A88D81762854DFDD00A6F3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A88D81782854DFDD00A6F3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A88D817D2854DFDE00A6F3D6 /* TiltGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiltGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88D81812854DFDE00A6F3D6 /* TiltGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltGameTests.swift; sourceTree = "<group>"; };
+		A88D81872854DFDE00A6F3D6 /* TiltGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiltGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88D818B2854DFDE00A6F3D6 /* TiltGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltGameUITests.swift; sourceTree = "<group>"; };
+		A88D818D2854DFDE00A6F3D6 /* TiltGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A88D81642854DFD900A6F3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88D817A2854DFDE00A6F3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88D81842854DFDE00A6F3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A88D815E2854DFD900A6F3D6 = {
+			isa = PBXGroup;
+			children = (
+				A88D81692854DFD900A6F3D6 /* TiltGame */,
+				A88D81802854DFDE00A6F3D6 /* TiltGameTests */,
+				A88D818A2854DFDE00A6F3D6 /* TiltGameUITests */,
+				A88D81682854DFD900A6F3D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A88D81682854DFD900A6F3D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A88D81672854DFD900A6F3D6 /* TiltGame.app */,
+				A88D817D2854DFDE00A6F3D6 /* TiltGameTests.xctest */,
+				A88D81872854DFDE00A6F3D6 /* TiltGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A88D81692854DFD900A6F3D6 /* TiltGame */ = {
+			isa = PBXGroup;
+			children = (
+				A88D816A2854DFD900A6F3D6 /* AppDelegate.swift */,
+				A88D816C2854DFD900A6F3D6 /* SceneDelegate.swift */,
+				A88D816E2854DFD900A6F3D6 /* ViewController.swift */,
+				A88D81702854DFD900A6F3D6 /* Main.storyboard */,
+				A88D81732854DFDD00A6F3D6 /* Assets.xcassets */,
+				A88D81752854DFDD00A6F3D6 /* LaunchScreen.storyboard */,
+				A88D81782854DFDD00A6F3D6 /* Info.plist */,
+			);
+			path = TiltGame;
+			sourceTree = "<group>";
+		};
+		A88D81802854DFDE00A6F3D6 /* TiltGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				A88D81812854DFDE00A6F3D6 /* TiltGameTests.swift */,
+			);
+			path = TiltGameTests;
+			sourceTree = "<group>";
+		};
+		A88D818A2854DFDE00A6F3D6 /* TiltGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A88D818B2854DFDE00A6F3D6 /* TiltGameUITests.swift */,
+				A88D818D2854DFDE00A6F3D6 /* TiltGameUITestsLaunchTests.swift */,
+			);
+			path = TiltGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A88D81662854DFD900A6F3D6 /* TiltGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A88D81912854DFDE00A6F3D6 /* Build configuration list for PBXNativeTarget "TiltGame" */;
+			buildPhases = (
+				A88D81632854DFD900A6F3D6 /* Sources */,
+				A88D81642854DFD900A6F3D6 /* Frameworks */,
+				A88D81652854DFD900A6F3D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TiltGame;
+			productName = TiltGame;
+			productReference = A88D81672854DFD900A6F3D6 /* TiltGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A88D817C2854DFDE00A6F3D6 /* TiltGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A88D81942854DFDE00A6F3D6 /* Build configuration list for PBXNativeTarget "TiltGameTests" */;
+			buildPhases = (
+				A88D81792854DFDE00A6F3D6 /* Sources */,
+				A88D817A2854DFDE00A6F3D6 /* Frameworks */,
+				A88D817B2854DFDE00A6F3D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A88D817F2854DFDE00A6F3D6 /* PBXTargetDependency */,
+			);
+			name = TiltGameTests;
+			productName = TiltGameTests;
+			productReference = A88D817D2854DFDE00A6F3D6 /* TiltGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A88D81862854DFDE00A6F3D6 /* TiltGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A88D81972854DFDE00A6F3D6 /* Build configuration list for PBXNativeTarget "TiltGameUITests" */;
+			buildPhases = (
+				A88D81832854DFDE00A6F3D6 /* Sources */,
+				A88D81842854DFDE00A6F3D6 /* Frameworks */,
+				A88D81852854DFDE00A6F3D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A88D81892854DFDE00A6F3D6 /* PBXTargetDependency */,
+			);
+			name = TiltGameUITests;
+			productName = TiltGameUITests;
+			productReference = A88D81872854DFDE00A6F3D6 /* TiltGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A88D815F2854DFD900A6F3D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A88D81662854DFD900A6F3D6 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					A88D817C2854DFDE00A6F3D6 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A88D81662854DFD900A6F3D6;
+					};
+					A88D81862854DFDE00A6F3D6 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A88D81662854DFD900A6F3D6;
+					};
+				};
+			};
+			buildConfigurationList = A88D81622854DFD900A6F3D6 /* Build configuration list for PBXProject "TiltGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A88D815E2854DFD900A6F3D6;
+			productRefGroup = A88D81682854DFD900A6F3D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A88D81662854DFD900A6F3D6 /* TiltGame */,
+				A88D817C2854DFDE00A6F3D6 /* TiltGameTests */,
+				A88D81862854DFDE00A6F3D6 /* TiltGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A88D81652854DFD900A6F3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88D81772854DFDD00A6F3D6 /* LaunchScreen.storyboard in Resources */,
+				A88D81742854DFDD00A6F3D6 /* Assets.xcassets in Resources */,
+				A88D81722854DFD900A6F3D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88D817B2854DFDE00A6F3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88D81852854DFDE00A6F3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A88D81632854DFD900A6F3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88D816F2854DFD900A6F3D6 /* ViewController.swift in Sources */,
+				A88D816B2854DFD900A6F3D6 /* AppDelegate.swift in Sources */,
+				A88D816D2854DFD900A6F3D6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88D81792854DFDE00A6F3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88D81822854DFDE00A6F3D6 /* TiltGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88D81832854DFDE00A6F3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88D818E2854DFDE00A6F3D6 /* TiltGameUITestsLaunchTests.swift in Sources */,
+				A88D818C2854DFDE00A6F3D6 /* TiltGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A88D817F2854DFDE00A6F3D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A88D81662854DFD900A6F3D6 /* TiltGame */;
+			targetProxy = A88D817E2854DFDE00A6F3D6 /* PBXContainerItemProxy */;
+		};
+		A88D81892854DFDE00A6F3D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A88D81662854DFD900A6F3D6 /* TiltGame */;
+			targetProxy = A88D81882854DFDE00A6F3D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A88D81702854DFD900A6F3D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A88D81712854DFD900A6F3D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A88D81752854DFDD00A6F3D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A88D81762854DFDD00A6F3D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A88D818F2854DFDE00A6F3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A88D81902854DFDE00A6F3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A88D81922854DFDE00A6F3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXP6698C26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TiltGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.villanoy.TiltGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A88D81932854DFDE00A6F3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXP6698C26;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TiltGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.villanoy.TiltGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A88D81952854DFDE00A6F3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXP6698C26;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.villanoy.TiltGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiltGame.app/TiltGame";
+			};
+			name = Debug;
+		};
+		A88D81962854DFDE00A6F3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXP6698C26;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.villanoy.TiltGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiltGame.app/TiltGame";
+			};
+			name = Release;
+		};
+		A88D81982854DFDE00A6F3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXP6698C26;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.villanoy.TiltGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TiltGame;
+			};
+			name = Debug;
+		};
+		A88D81992854DFDE00A6F3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WXP6698C26;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.villanoy.TiltGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TiltGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A88D81622854DFD900A6F3D6 /* Build configuration list for PBXProject "TiltGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A88D818F2854DFDE00A6F3D6 /* Debug */,
+				A88D81902854DFDE00A6F3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A88D81912854DFDE00A6F3D6 /* Build configuration list for PBXNativeTarget "TiltGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A88D81922854DFDE00A6F3D6 /* Debug */,
+				A88D81932854DFDE00A6F3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A88D81942854DFDE00A6F3D6 /* Build configuration list for PBXNativeTarget "TiltGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A88D81952854DFDE00A6F3D6 /* Debug */,
+				A88D81962854DFDE00A6F3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A88D81972854DFDE00A6F3D6 /* Build configuration list for PBXNativeTarget "TiltGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A88D81982854DFDE00A6F3D6 /* Debug */,
+				A88D81992854DFDE00A6F3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A88D815F2854DFD900A6F3D6 /* Project object */;
+}
