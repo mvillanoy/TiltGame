@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8593D472857A280000325E3 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8593D462857A280000325E3 /* CircleView.swift */; };
+		A8593D6E2858D871000325E3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8593D6D2858D871000325E3 /* GameViewController.swift */; };
+		A8593D702858D877000325E3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8593D6F2858D877000325E3 /* GameScene.swift */; };
 		A88D816B2854DFD900A6F3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D816A2854DFD900A6F3D6 /* AppDelegate.swift */; };
 		A88D816D2854DFD900A6F3D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D816C2854DFD900A6F3D6 /* SceneDelegate.swift */; };
 		A88D816F2854DFD900A6F3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D816E2854DFD900A6F3D6 /* ViewController.swift */; };
@@ -16,6 +19,8 @@
 		A88D81822854DFDE00A6F3D6 /* TiltGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D81812854DFDE00A6F3D6 /* TiltGameTests.swift */; };
 		A88D818C2854DFDE00A6F3D6 /* TiltGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D818B2854DFDE00A6F3D6 /* TiltGameUITests.swift */; };
 		A88D818E2854DFDE00A6F3D6 /* TiltGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D818D2854DFDE00A6F3D6 /* TiltGameUITestsLaunchTests.swift */; };
+		A88D819B2854E6ED00A6F3D6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D819A2854E6ED00A6F3D6 /* UIView+Extensions.swift */; };
+		A88D819D2854E7BF00A6F3D6 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D819C2854E7BF00A6F3D6 /* TriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8593D462857A280000325E3 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		A8593D6D2858D871000325E3 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = ../../TileGameSpriteKit/TileGameSpriteKit/GameViewController.swift; sourceTree = "<group>"; };
+		A8593D6F2858D877000325E3 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ../../TileGameSpriteKit/TileGameSpriteKit/GameScene.swift; sourceTree = "<group>"; };
 		A88D81672854DFD900A6F3D6 /* TiltGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiltGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88D816A2854DFD900A6F3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A88D816C2854DFD900A6F3D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		A88D81872854DFDE00A6F3D6 /* TiltGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiltGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88D818B2854DFDE00A6F3D6 /* TiltGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltGameUITests.swift; sourceTree = "<group>"; };
 		A88D818D2854DFDE00A6F3D6 /* TiltGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiltGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A88D819A2854E6ED00A6F3D6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A88D819C2854E7BF00A6F3D6 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				A88D816A2854DFD900A6F3D6 /* AppDelegate.swift */,
+				A88D819C2854E7BF00A6F3D6 /* TriangleView.swift */,
 				A88D816C2854DFD900A6F3D6 /* SceneDelegate.swift */,
 				A88D816E2854DFD900A6F3D6 /* ViewController.swift */,
+				A8593D6D2858D871000325E3 /* GameViewController.swift */,
+				A8593D6F2858D877000325E3 /* GameScene.swift */,
 				A88D81702854DFD900A6F3D6 /* Main.storyboard */,
 				A88D81732854DFDD00A6F3D6 /* Assets.xcassets */,
 				A88D81752854DFDD00A6F3D6 /* LaunchScreen.storyboard */,
 				A88D81782854DFDD00A6F3D6 /* Info.plist */,
+				A88D819A2854E6ED00A6F3D6 /* UIView+Extensions.swift */,
+				A8593D462857A280000325E3 /* CircleView.swift */,
 			);
 			path = TiltGame;
 			sourceTree = "<group>";
@@ -258,8 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8593D6E2858D871000325E3 /* GameViewController.swift in Sources */,
+				A8593D472857A280000325E3 /* CircleView.swift in Sources */,
+				A8593D702858D877000325E3 /* GameScene.swift in Sources */,
+				A88D819D2854E7BF00A6F3D6 /* TriangleView.swift in Sources */,
 				A88D816F2854DFD900A6F3D6 /* ViewController.swift in Sources */,
 				A88D816B2854DFD900A6F3D6 /* AppDelegate.swift in Sources */,
+				A88D819B2854E6ED00A6F3D6 /* UIView+Extensions.swift in Sources */,
 				A88D816D2854DFD900A6F3D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
