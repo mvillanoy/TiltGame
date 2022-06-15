@@ -52,6 +52,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     
     var collision: UICollisionBehavior!
     var gravity: UIGravityBehavior!
+    var push: UIPushBehavior!
     
     
     var intersectionTimer = Timer()
@@ -125,7 +126,8 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         animator.addBehavior(circleCollision)
         
         
-        let push = UIPushBehavior(items: [triangleView], mode: .instantaneous)
+        push = UIPushBehavior(items: [triangleView], mode: .instantaneous)
+//        push.setAngle(-0.78, magnitude: 1)
         push.pushDirection = CGVector(dx: triangleSpeed, dy: triangleSpeed)
         animator.addBehavior(push)
         
@@ -153,9 +155,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         
         self.trajectoryTimer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true, block: { [self] _ in
             
-            let push = UIPushBehavior(items: [triangleView], mode: .instantaneous)
-            push.pushDirection = CGVector(dx: triangleSpeed, dy: triangleSpeed)
-            animator.addBehavior(push)
+//            self.push.angle = CGFloat(Int(arc4random_uniform(100) + 1)) * CGFloat(Float.pi) * 2
         })
         
     }
@@ -192,13 +192,12 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
                            beganContactFor item: UIDynamicItem,
                            withBoundaryIdentifier identifier: NSCopying?,
                            at p: CGPoint) {
-        triangleSpeed += 0.1
-        let push = UIPushBehavior(items: [triangleView], mode: .instantaneous)
-        push.pushDirection = CGVector(dx: triangleSpeed, dy: triangleSpeed)
-        animator.addBehavior(push)
-        
+        triangleSpeed += 0.2
+//        push.magnitude = triangleSpeed
+//
 
-        
+        push.pushDirection = CGVector(dx: triangleSpeed, dy: triangleSpeed)
+
     }
     
     

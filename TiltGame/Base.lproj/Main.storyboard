@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TiltGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819" y="-695"/>
+            <point key="canvasLocation" x="1642" y="-720"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lBj-PE-mxd">
@@ -33,35 +33,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcY-Fz-tHs">
-                                <rect key="frame" x="0.0" y="492" width="414" height="370"/>
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="SpriteKit"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SpriteKit">
+                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                        <color key="backgroundColor" red="0.79699613469147279" green="0.4605858630342311" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="1A7-TM-ypJ" kind="presentation" modalPresentationStyle="fullScreen" id="HEl-d4-pgS"/>
+                                    <segue destination="1A7-TM-ypJ" kind="presentation" id="ZjJ-pK-543"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KC4-80-Q0k">
-                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="UIKit"/>
+                                <buttonConfiguration key="configuration" style="plain" title="UIKit">
+                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                        <color key="backgroundColor" red="0.46870291390000002" green="0.53218959639999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="7Jf-10-1Mn"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="W9B-zm-f9n"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eoc-1q-mH1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hcY-Fz-tHs" firstAttribute="bottom" secondItem="eoc-1q-mH1" secondAttribute="bottom" id="1Vc-5b-FUQ"/>
+                            <constraint firstItem="hcY-Fz-tHs" firstAttribute="bottom" secondItem="uo3-sy-XGO" secondAttribute="bottom" id="1Vc-5b-FUQ"/>
                             <constraint firstItem="KC4-80-Q0k" firstAttribute="height" secondItem="uo3-sy-XGO" secondAttribute="height" multiplier="0.5" id="C6u-ZS-pqi"/>
                             <constraint firstItem="hcY-Fz-tHs" firstAttribute="trailing" secondItem="eoc-1q-mH1" secondAttribute="trailing" id="N5Y-mg-1zh"/>
-                            <constraint firstItem="KC4-80-Q0k" firstAttribute="top" secondItem="eoc-1q-mH1" secondAttribute="top" id="WrC-1o-6Mr"/>
+                            <constraint firstItem="KC4-80-Q0k" firstAttribute="top" secondItem="uo3-sy-XGO" secondAttribute="top" id="WrC-1o-6Mr"/>
                             <constraint firstItem="hcY-Fz-tHs" firstAttribute="top" secondItem="KC4-80-Q0k" secondAttribute="bottom" id="Yav-dg-VbN"/>
                             <constraint firstItem="KC4-80-Q0k" firstAttribute="trailing" secondItem="eoc-1q-mH1" secondAttribute="trailing" id="eBz-t3-pOY"/>
                             <constraint firstItem="hcY-Fz-tHs" firstAttribute="leading" secondItem="eoc-1q-mH1" secondAttribute="leading" id="qp8-Jk-rKC"/>
                             <constraint firstItem="KC4-80-Q0k" firstAttribute="leading" secondItem="eoc-1q-mH1" secondAttribute="leading" id="urW-sq-p3F"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="f7n-pa-mIc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYL-UU-vBB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +83,7 @@
             <objects>
                 <viewController id="1A7-TM-ypJ" customClass="GameViewController" customModule="TiltGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="eht-q8-vwZ" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Rhy-XR-Okl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
