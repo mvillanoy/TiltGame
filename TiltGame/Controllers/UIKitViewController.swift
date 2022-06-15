@@ -10,7 +10,7 @@ import UIKit
 import CoreMotion
 
 
-class ViewController: UIViewController, UICollisionBehaviorDelegate {
+class UIKitViewController: UIViewController, UICollisionBehaviorDelegate {
     
     lazy public var currentTimeLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: self.view.frame.midX-100, y: 100, width: 200, height: 21))
@@ -49,27 +49,26 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
     let motionManager = CMMotionManager()
     
     var animator: UIDynamicAnimator!
-    
     var collision: UICollisionBehavior!
     var gravity: UIGravityBehavior!
     var push: UIPushBehavior!
     
-    
     var intersectionTimer = Timer()
-    
     var timer = Timer()
     var trajectoryTimer = Timer()
+    
     var currentCount = 0
     var bestCount = 0
     
     var counterStarted = false
     
-    var triangleSpeed:Double = 0.5
+    var triangleSpeed:Double = 1.0
+    var angle = 45
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-    
+        
         motionManager.accelerometerUpdateInterval = 0.01
         
         motionManager.startAccelerometerUpdates(to: .main) { [self]
@@ -78,7 +77,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
                 return
             }
             
-            self.gravity.gravityDirection = CGVector(dx: data.acceleration.x * 1, dy: data.acceleration.y *    (-1))
+            self.gravity.gravityDirection = CGVector(dx: data.acceleration.x * 0.5, dy: data.acceleration.y * (-0.5))
         }
     }
     
@@ -95,15 +94,12 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
                     startTimer()
                     triangleView.backgroundColor = UIColor.yellow
                 }
-                
             }else {
-               
-                
                 if counterStarted {
                     resetTimer()
                     counterStarted = false
                     triangleView.backgroundColor = UIColor.gray
-
+                    
                 }
             }
         })
@@ -127,8 +123,7 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         
         
         push = UIPushBehavior(items: [triangleView], mode: .instantaneous)
-//        push.setAngle(-0.78, magnitude: 1)
-        push.pushDirection = CGVector(dx: triangleSpeed, dy: triangleSpeed)
+        push.pushDirection = CGVector(dx: triangleSpeed * cos(Double(angle) * Double.pi / 180), dy: triangleSpeed * sin(Double(angle) * Double.pi / 180))
         animator.addBehavior(push)
         
         let behavior = UIDynamicItemBehavior.init(items: [triangleView])
@@ -154,10 +149,16 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         
         
         self.trajectoryTimer = Timer.scheduledTimer(withTimeInterval: 3, repeats: true, block: { [self] _ in
-            
-//            self.push.angle = CGFloat(Int(arc4random_uniform(100) + 1)) * CGFloat(Float.pi) * 2
+            angle = Int.random(in: 0...360)
+            changeSpeedOrDirection()
         })
         
+    }
+    
+    
+    func changeSpeedOrDirection(){
+        push.pushDirection = CGVector(dx: triangleSpeed * cos(Double(angle) * Double.pi / 180), dy: triangleSpeed * sin(Double(angle) * Double.pi / 180))
+        push.active = true
     }
     
     func resetTimer(){
@@ -192,12 +193,9 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
                            beganContactFor item: UIDynamicItem,
                            withBoundaryIdentifier identifier: NSCopying?,
                            at p: CGPoint) {
-        triangleSpeed += 0.2
-//        push.magnitude = triangleSpeed
-//
-
-        push.pushDirection = CGVector(dx: triangleSpeed, dy: triangleSpeed)
-
+        triangleSpeed += 0.01
+        changeSpeedOrDirection()
+        
     }
     
     
